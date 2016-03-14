@@ -9,10 +9,11 @@ $(document).ready(function() {
       $('.grocery-list').append("<div class='grocery-item'>" + groceryItem + " <input type='submit' class='delete' value='Delete'></div>");
     };
   });
+});
 
+$(document).ready(function() {
   $('.delete').click( function(event) {
     event.preventDefault();
     $(this).parent('.grocery-item').remove();
   });
-
 });
